@@ -12,4 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Shellcheck
-        run: shellcheck *.sh
+        run: |
+          shopt -s nullglob dotglob
+          shellcheck **.sh
