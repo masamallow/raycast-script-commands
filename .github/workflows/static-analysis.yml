@@ -1,8 +1,5 @@
 name: Static Analysis for Commands
 on:
-  push:
-    branches:
-      - chore/add-shellcheck-github-actions
   pull_request:
     paths:
       - 'commands/**.sh'
