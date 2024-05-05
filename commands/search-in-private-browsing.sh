@@ -7,7 +7,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Search by Private Browsing
+# @raycast.title Search in Private Browsing
 # @raycast.mode silent
 
 # Optional parameters:
