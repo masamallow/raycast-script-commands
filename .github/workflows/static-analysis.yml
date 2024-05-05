@@ -1,17 +1,17 @@
-name: Static Analysis
+name: Static Analysis for Commands
 on:
   push:
     branches:
       - chore/add-shellcheck-github-actions
   pull_request:
     paths:
-      - '**.sh'
+      - 'commands/**.sh'
 jobs:
-  shellcheck:
+  lint-commands:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run Shellcheck
+      - name: Shellcheck for commands
         run: |
           shopt -s nullglob dotglob
-          shellcheck **.sh
+          shellcheck commands/**.sh
