@@ -1,0 +1,14 @@
+name: Static Analysis for Commands
+on:
+  pull_request:
+    paths:
+      - 'commands/**.sh'
+jobs:
+  lint-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Shellcheck for commands
+        run: |
+          shopt -s nullglob dotglob
+          shellcheck commands/**.sh
