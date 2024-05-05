@@ -5,6 +5,9 @@
 # script-commands/commands/browsing/to-private-browsing.sh at master raycast/script-commands GitHub
 # https://github.com/raycast/script-commands/blob/master/commands/browsing/to-private-browsing.sh
 
+# Note: Browser app required (Google Chrome or Brave Browser)
+# Install via official website.
+
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Search in Private Browsing
